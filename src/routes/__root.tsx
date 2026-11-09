@@ -82,7 +82,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { title: "Muskan Kumari — Portfolio" },
-      { name: "description", content: "Portfolio of Muskan Kumari, B.Tech CS student." },
+      { name: "description", content: "Portfolio of Muskan Kumari, B.Tech CSE student at Haridwar University." },
       { name: "author", content: "Muskan Kumari" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
