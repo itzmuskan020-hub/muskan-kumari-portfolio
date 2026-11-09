@@ -60,7 +60,7 @@ export const profile = {
   activities: [
     {
       title: "Smart India Hackathon (SIH) 2026",
-      detail: "Participated as a member of Team FutureStack.",
+      detail: "Participated as a member of Team  Green Intelligence",
     },
   ],
   education: {
