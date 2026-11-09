@@ -8,8 +8,8 @@ export const profile = {
   github: "https://github.com/itzmuskan020-hub",
   // Leave empty until you want to show an email. When set, a "Email me" button appears.
   email: "",
-  // Regenerate or replace public/muskan-kumari-resume.pdf to update the resume.
-  resumeUrl: "/muskan-kumari-resume.pdf",
+  // Regenerate or replace public/resume.pdf to update the resume.
+  resumeUrl: "/resume.pdf",
   about: [
     "I'm Muskan Kumari, a B.Tech Computer Science & Engineering student at Haridwar University with interests in artificial intelligence, technology, entrepreneurship and startups.",
     "My projects so far include a beginner C console program and a team-built campus resource-sharing web demo. I value problem solving, teamwork and clear communication, and I'm steadily building my technical foundations.",
