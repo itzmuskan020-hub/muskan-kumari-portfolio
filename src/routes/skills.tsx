@@ -3,7 +3,7 @@ import { Section, meta } from "@/components/site";
 import { profile } from "@/content/profile";
 
 export const Route = createFileRoute("/skills")({
-  head: () => meta("Skills — Muskan Kumari", "Skills Muskan Kumari is building: Python, C/C++, web technologies, problem solving and teamwork."),
+  head: () => meta("Skills — Muskan Kumari", "Skills Muskan Kumari is building: C, JavaScript, React, Vite, HTML/CSS, Git/GitHub, problem solving and teamwork."),
   component: () => (
     <Section eyebrow="Skills" title="What I work with">
       <p className="text-sm text-muted-foreground mb-8">Editable starter list — skills I'm learning and using; no proficiency levels implied.</p>
