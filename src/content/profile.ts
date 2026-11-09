@@ -1,70 +1,70 @@
 // ✏️ Edit all personal details and copy here. Everything on the site reads from this file.
 export const profile = {
   name: "Muskan Kumari",
-  tagline: "B.Tech Computer Science student exploring AI, technology & startups.",
+  tagline: "B.Tech Computer Science & Engineering student at Haridwar University, interested in AI, technology & startups.",
   intro:
-    "I'm curious about how AI and thoughtful technology can solve real, everyday problems — and how great ideas grow into ventures that matter.",
-  linkedin: "https://www.linkedin.com/in/muskan-kumari-018921436",
+    "I enjoy learning by building — from small C programs to team web projects — and I'm curious about how technology and entrepreneurship can solve real problems.",
+  linkedin: "https://www.linkedin.com/in/muskan-kumari-018921436/",
   github: "https://github.com/itzmuskan020-hub",
   // Leave empty until you want to show an email. When set, a "Email me" button appears.
   email: "",
-  // Replace public/resume.pdf with your own resume PDF (keep the same file name).
-  resumeUrl: "/resume.pdf",
+  // Regenerate or replace public/muskan-kumari-resume.pdf to update the resume.
+  resumeUrl: "/muskan-kumari-resume.pdf",
   about: [
-    "I'm a B.Tech Computer Science student with a strong interest in artificial intelligence, emerging technology, entrepreneurship and the startup ecosystem.",
-    "I enjoy turning problems I notice around me — in cities, campuses and communities — into project ideas, and learning the skills needed to build them with a team.",
+    "I'm Muskan Kumari, a B.Tech Computer Science & Engineering student at Haridwar University with interests in artificial intelligence, technology, entrepreneurship and startups.",
+    "My projects so far include a beginner C console program and a team-built campus resource-sharing web demo. I value problem solving, teamwork and clear communication, and I'm steadily building my technical foundations.",
   ],
   interests: ["Artificial Intelligence", "Technology", "Entrepreneurship", "Startups"],
-  // Editable starter list — no proficiency levels implied.
+  // Editable list based on technologies used in her GitHub projects — no proficiency levels implied.
   skills: {
-    "Programming": ["Python", "C/C++", "JavaScript"],
-    "Web": ["HTML/CSS"],
-    "Strengths": ["Problem solving", "Teamwork", "Entrepreneurship"],
+    "Languages": ["C", "JavaScript", "HTML/CSS"],
+    "Tools & frameworks": ["React", "Vite", "Git/GitHub", "Supabase (schema groundwork only)"],
+    "Strengths": ["Problem solving", "Teamwork", "Communication & presentation"],
   } as Record<string, string[]>,
   projects: [
     {
-      name: "CivicAI",
-      kind: "Project",
+      name: "CampusVault",
+      kind: "Team project · Demo",
       summary:
-        "An AI-powered civic issue reporting and tracking platform that helps citizens report local problems and helps authorities act on them faster.",
+        "A responsive campus resource-sharing demo for underused campus equipment and spaces, running as a browser-local demo with fictional data.",
       features: [
-        "Image-based issue detection",
-        "Severity estimation",
-        "Location tagging",
-        "Automatic department routing",
-        "Structured complaint generation",
-        "Status tracking",
+        "Catalogue search and filters",
+        "Booking requests",
+        "Staff approval, rejection and waitlist",
+        "Booking overlap detection",
+        "Resource management",
+        "Checkout/return notes",
+        "Incident reports",
+        "Notices and activity trail",
       ],
-      link: "https://github.com/itzmuskan020-hub",
+      stack: ["React 19", "Vite", "JavaScript", "Supabase JS (not yet integrated)"],
+      note: "Not a production backend: Supabase schema and policy groundwork exists, but the app is not yet switched to Supabase Auth or backend reads/writes.",
+      link: "https://github.com/itzmuskan020-hub/CampusVault",
     },
     {
-      name: "Digital Wellness for Students",
-      kind: "Concept",
+      name: "Mad Libs Story Generator",
+      kind: "C console app",
       summary:
-        "A student-focused digital wellness platform concept designed to make mental-health support approachable, private and easy to access.",
+        "A beginner-friendly console program that asks the user for words and generates a funny, personalized story.",
       features: [
-        "Anonymous self-help resources",
-        "Peer support",
-        "Counselling appointment booking",
-        "Confidentiality-focused design",
-        "AI chatbot for guidance",
+        "User-entered words via scanf",
+        "Story output with printf",
+        "Variables and character arrays",
+        "Basic string handling and I/O",
       ],
-      link: "https://github.com/itzmuskan020-hub",
+      stack: ["C"],
+      note: "",
+      link: "https://github.com/itzmuskan020-hub/mad-libs",
     },
   ],
   activities: [
     {
-      title: "Team FutureStack",
-      detail: "Member of Team FutureStack, collaborating on technology project ideas.",
-    },
-    {
-      title: "KILN '26",
-      detail: "Participated in KILN '26 as part of Team FutureStack.",
+      title: "Smart India Hackathon (SIH) 2026",
+      detail: "Participated as a member of Team FutureStack.",
     },
   ],
   education: {
-    degree: "B.Tech in Computer Science",
-    institution: "[Your institution name]",
-    graduation: "[Expected graduation year]",
+    degree: "B.Tech, Computer Science & Engineering",
+    institution: "Haridwar University",
   },
 };

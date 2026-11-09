@@ -10,7 +10,7 @@ export const Route = createFileRoute("/contact")({
       <SocialButtons />
       <div className="card-surface mt-12 max-w-xl">
         <p className="eyebrow">Resume</p>
-        <p className="mt-2 text-muted-foreground">Placeholder file — replace with my own PDF resume.</p>
+        <p className="mt-2 text-muted-foreground">One-page PDF resume with links to my LinkedIn and GitHub.</p>
         <a href={profile.resumeUrl} download className="btn-ghost mt-4 inline-flex">Download resume (PDF)</a>
       </div>
     </Section>

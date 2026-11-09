@@ -3,7 +3,7 @@ import { Shell, SocialButtons, meta } from "@/components/site";
 import { profile } from "@/content/profile";
 
 export const Route = createFileRoute("/")({
-  head: () => meta("Muskan Kumari — CS Student, AI & Startups", "Portfolio of Muskan Kumari, a B.Tech Computer Science student interested in AI, technology, entrepreneurship and startups."),
+  head: () => meta("Muskan Kumari — CS Student, AI & Startups", "Portfolio of Muskan Kumari, a B.Tech CSE student at Haridwar University interested in AI, technology, entrepreneurship and startups."),
   component: Index,
 });
 
@@ -13,7 +13,7 @@ function Index() {
       <section className="relative overflow-hidden">
         <div className="hero-glow" aria-hidden />
         <div className="relative mx-auto max-w-6xl px-5 py-24 md:py-36">
-          <p className="eyebrow">Portfolio · B.Tech Computer Science</p>
+          <p className="eyebrow">Portfolio · B.Tech CSE · Haridwar University</p>
           <h1 className="font-display text-6xl md:text-8xl leading-[0.95] mt-5 text-foreground">
             Muskan <em className="text-gradient">Kumari</em>
           </h1>

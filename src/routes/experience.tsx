@@ -3,7 +3,7 @@ import { Section, meta } from "@/components/site";
 import { profile } from "@/content/profile";
 
 export const Route = createFileRoute("/experience")({
-  head: () => meta("Experience & Activities — Muskan Kumari", "Team FutureStack and KILN '26 participation by Muskan Kumari."),
+  head: () => meta("Experience & Activities — Muskan Kumari", "Muskan Kumari's participation in SIH 2026 with Team FutureStack."),
   component: () => (
     <Section eyebrow="Experience & Activities" title="Teams & events">
       <ol className="border-l border-border ml-2 space-y-8">
