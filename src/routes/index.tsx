@@ -1,23 +1,43 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
+import { Shell, SocialButtons, meta } from "@/components/site";
+import { profile } from "@/content/profile";
 
-// The home route ships no og:image, so serve-time hosting can inject the
-// project's social preview (explicit og:image or latest screenshot).
 export const Route = createFileRoute("/")({
+  head: () => meta("Muskan Kumari — CS Student, AI & Startups", "Portfolio of Muskan Kumari, a B.Tech Computer Science student interested in AI, technology, entrepreneurship and startups."),
   component: Index,
 });
 
-// IMPORTANT: Replace this placeholder. See ./README.md for routing conventions.
 function Index() {
   return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
-    </div>
+    <Shell>
+      <section className="relative overflow-hidden">
+        <div className="hero-glow" aria-hidden />
+        <div className="relative mx-auto max-w-6xl px-5 py-24 md:py-36">
+          <p className="eyebrow">Portfolio · B.Tech Computer Science</p>
+          <h1 className="font-display text-6xl md:text-8xl leading-[0.95] mt-5 text-foreground">
+            Muskan <em className="text-gradient">Kumari</em>
+          </h1>
+          <p className="mt-6 max-w-2xl text-xl text-muted-foreground">{profile.tagline}</p>
+          <p className="mt-4 max-w-2xl text-muted-foreground">{profile.intro}</p>
+          <div className="mt-10 flex flex-wrap gap-3">
+            <Link to="/projects" className="btn-solid">View projects</Link>
+            <a href={profile.resumeUrl} download className="btn-ghost">Download resume</a>
+          </div>
+          <div className="mt-6"><SocialButtons /></div>
+          <div className="mt-16 flex flex-wrap gap-2">
+            {profile.interests.map((i) => <span key={i} className="chip">{i}</span>)}
+          </div>
+        </div>
+      </section>
+      <section className="mx-auto max-w-6xl px-5 pb-24 grid md:grid-cols-2 gap-6">
+        {profile.projects.map((p) => (
+          <Link key={p.name} to="/projects" className="card-surface block">
+            <span className="chip">{p.kind}</span>
+            <h2 className="font-display text-3xl mt-4 text-foreground">{p.name}</h2>
+            <p className="mt-2 text-muted-foreground">{p.summary}</p>
+          </Link>
+        ))}
+      </section>
+    </Shell>
   );
 }
