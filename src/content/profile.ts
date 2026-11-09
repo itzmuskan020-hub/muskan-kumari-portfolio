@@ -11,13 +11,13 @@ export const profile = {
   // Regenerate or replace public/resume.pdf to update the resume.
   resumeUrl: "/resume.pdf",
   about: [
-    "I'm Muskan Kumari, a B.Tech Computer Science & Engineering student at Haridwar University with interests in artificial intelligence, technology, entrepreneurship and startups.",
+    "I'm Muskan Kumari, a B.Tech Computer Science & Engineering student at Haridwar University with interests in artificial intelligence, technology, web development and startups.",
     "My projects so far include a beginner C console program and a team-built campus resource-sharing web demo. I value problem solving, teamwork and clear communication, and I'm steadily building my technical foundations.",
   ],
-  interests: ["Artificial Intelligence", "Technology", "Entrepreneurship", "Startups"],
+  interests: ["Artificial Intelligence", "Technology", "Web Development", "Startups"],
   // Editable list based on technologies used in her GitHub projects — no proficiency levels implied.
   skills: {
-    "Languages": ["C", "JavaScript", "HTML/CSS"],
+    "Languages": ["C", "C++", "Python", "JavaScript", "HTML/CSS"],
     "Tools & frameworks": ["React", "Vite", "Git/GitHub", "Supabase (schema groundwork only)"],
     "Strengths": ["Problem solving", "Teamwork", "Communication & presentation"],
   } as Record<string, string[]>,
